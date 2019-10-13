@@ -1,0 +1,138 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #e6e6e6;
+    color: #333333;
+    font-family:sans-serif;
+    font-size:20px;
+}
+h1, h2{
+    margin-top:10px;
+    color: #808080;
+}
+
+/* .nav bg style start */
+
+.nav_bg{
+    height:70px;
+    background-color:#808080;
+    color:#ffffff;
+}
+.logo{
+    height: auto;
+    padding-top:10px;
+    padding-left:10px;
+    letter-spacing: 1.5px;
+}
+ul.nav_menu{
+    
+    list-style-position: inside;
+    list-style-type: none;
+    display:flex;
+    justify-content:space-evenly;
+
+}
+nav.nav ul.nav_menu li a{
+    color:#f2f2f2;
+    text-decoration: none;
+    margin-left:10px;
+}
+/* .header_items style start */
+.header_items{
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+/* .header_items style end */
+/* .nav bg style end */
+/* .main_content style start */
+/* .main_content{
+
+} */
+/* #about_me style start */
+
+#about_me_content{
+    display:inline-block;
+    display:flex;
+    align-items:center;
+}
+#about_me_content img{
+    float:left;
+}
+#about_me_content p{
+    display:block;
+    margin:auto;
+}
+/* #about_me style end */
+/* #education style start */
+#education table{
+    margin-left:10px;
+    width:95%;
+    height:200px;
+}
+#education table, #education table th, #education table tr, #education table td{
+    border:1px solid #666666;
+    border-collapse:collapse;
+}
+#education table th{
+    background-color: #737373;
+}
+#education table tr:nth-child(even){
+    background-color:#cccccc;
+}
+#education table tr:hover{
+    background-color:#8c8c8c;
+}
+/* #education style end */
+/* #photos stle start */
+.photos_images{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* #photos stle end */
+/* #location stle start */
+#location iframe{
+    box-shadow: 1px 1px 1px 3px #4d4d4d;
+    margin-left:10px;
+    width:95%;
+    height:500px;
+}
+/* #location stle end */
+/* .main_content style end */
+/* .footer style start */
+.footer{
+    background-color:#808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    margin-top:5px;
+    height:50px;
+}
+/* .footer style end */
+/* adaptive design */
+@media only screen and (max-width: 600px){
+    .header,.nav_bg,.header_items, .footer{
+        width:100%;
+        height:auto;
+    }
+    ul.nav_menu, .header_items{
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+    #location iframe{
+        width:95%;
+        height:250px;
+        margin-right:3px;
+    }
+    .photos_images{
+        display:flex;
+        flex-direction: column;
+        align-items:space-evenly;
+    }
+}
